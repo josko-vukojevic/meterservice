@@ -1,0 +1,25 @@
+# ADDRESS ENDPOINTS
+- http://localhost:8080/address									// list all addresses
+- http://localhost:8080/address/1								// get address with id = 1
+- http://localhost:8080/address/add/?streetName=Vukovarska&houseNumber=55			// add new address with streetName & houseNumber
+
+# CLIENT ENDPOINTS
+- http://localhost:8080/client											// list all clients
+- http://localhost:8080/client/1										// get client with id = 1
+- http://localhost:8080/client/add/?name=ante&address_id=3				// add new client with name & address_id
+
+# METER ENDPOINTS
+- http://localhost:8080/meter											// list all meters
+- http://localhost:8080/meter/1											// get meter with id = 1
+- http://localhost:8080/meter/add/?clientId=2							// add new meter with clientId
+
+# METER READINGS ENDPOINTS
+- http://localhost:8080/meterReading									// list all meterReadings
+- http://localhost:8080/meterReading/getSpecific/?month=January&year=2020&meter_id=1	// get specific meterReading with month & year & meter_id
+- http://localhost:8080/meterReading/get/1								// get all meterReadings for given meter_id
+- http://localhost:8080/meterReading/get/?meter_id=1&year=2020			// get all meterReadings for given meter_id & year
+- http://localhost:8080/meterReading/add/?month=January&year=2020&kwh=25&meter_id=1		// add new meterReading with month & year & kwh & meter_id
+- http://localhost:8080/meterReading/update/?month=January&year=2020&kwh=25&meter_id=1	// update meterReading with specific month & year & meter_id
+- http://localhost:8080/meterReading/delete/?month=January&year=2020&meter_id=1			// delete meterReading with specific month & year & meter_id
+- http://localhost:8080/meterReading/delete/1							// delete meterReading with id = 1
+- http://localhost:8080/meterReading/aggPerYear/						// aggregate consumption for specific year for each meter_id
