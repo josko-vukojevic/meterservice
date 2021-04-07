@@ -24,5 +24,5 @@ This command will provide working environment with *mysql* images.
 7. (another terminal/cmd) $ java -jar path\to\project\meterservice\build\libs\meterservice-0.0.1-SNAPSHOT.jar
    (or inside root of project .\meterservice ) $ gradle bootRun
 ```
-- Open web browser or some other API testing tool(Postman, ...), list of RREST endpoints are in *endpoints.txt*
+- Open web browser or some other API testing tool(Postman, ...), list of RREST endpoints are in *resources/endpoints.txt*
  
