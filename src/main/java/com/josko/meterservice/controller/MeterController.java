@@ -48,7 +48,7 @@ public class MeterController {
 	 * Add Meter.
 	 */
 	@PostMapping("/add/")
-	public void add(@Param(value = "client_id") int client_id) {
+	public void add(@Param(value = "clientId") int client_id) {
 		meterService.add(client_id);
 	}
 }
