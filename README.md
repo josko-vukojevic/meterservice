@@ -16,7 +16,7 @@ This command will provide working environment with *mysql* images.
 - Run commands in following order:
 ```
 1. docker ps
-2. docker exec -it <DONTAINER ID> bash
+2. docker exec -it <CONTAINER ID> bash
 3. mysql -u root -p
 4. (enter pass) root
 5. mysql> CREATE DATABASE myDb;
